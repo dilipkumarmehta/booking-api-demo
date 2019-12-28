@@ -18,7 +18,7 @@
 	</properties>
 
 	<groupId>com.booking</groupId>
-	<artifactId>com.booking</artifactId>
+	<artifactId>booking-api-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<description>Demo project for Spring Boot</description>
 
