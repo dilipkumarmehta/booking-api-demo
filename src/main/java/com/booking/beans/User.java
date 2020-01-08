@@ -2,15 +2,34 @@ package com.booking.beans;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "user_detail1")
 public class User implements Serializable {
-	
+
 	private static final long serialVersionUID = 1L;
-	private String userName;
-	private String password;
-	private String email;
-	private String lastName;
-	private String firstName;
+	@Id
+	@Column(name = "mobileNmber")
 	private long mobileNmber;
+	
+	@Column(name = "userName")
+	private String userName;
+
+	@Column(name = "password")
+	private String password;
+
+	@Column(name = "email")
+	private String email;
+
+	@Column(name = "lastName")
+	private String lastName;
+
+	@Column(name = "firstName")
+	private String firstName;
 
 	public String getUserName() {
 		return userName;
