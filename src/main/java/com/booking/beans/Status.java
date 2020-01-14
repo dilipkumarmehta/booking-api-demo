@@ -1,50 +1,58 @@
 package com.booking.beans;
 
-public class Status {
-	private String type;
-	private String code;
-	private String message;
-	private boolean error;
-	private String username;
-	
-	public String getUsername() {
-		return username;
+import java.io.Serializable;
+
+public class Status implements Serializable {
+
+	private static final long serialVersionUID = 1048100897069274297L;
+
+	private String error_code;
+	private String success_code;
+	private String error_message;
+	private String success_message;
+
+	public Status() {
+
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
+	public Status(String error_code, String success_code, String error_message, String success_message) {
+		super();
+		this.error_code = error_code;
+		this.success_code = success_code;
+		this.error_message = error_message;
+		this.success_message = success_message;
 	}
 
-	public String getType() {
-		return type;
+	public String getError_code() {
+		return error_code;
 	}
 
-	public void setType(String type) {
-		this.type = type;
+	public void setError_code(String error_code) {
+		this.error_code = error_code;
 	}
 
-	public String getCode() {
-		return code;
+	public String getSuccess_code() {
+		return success_code;
 	}
 
-	public void setCode(String code) {
-		this.code = code;
+	public void setSuccess_code(String success_code) {
+		this.success_code = success_code;
 	}
 
-	public String getMessage() {
-		return message;
+	public String getError_message() {
+		return error_message;
 	}
 
-	public void setMessage(String message) {
-		this.message = message;
+	public void setError_message(String error_message) {
+		this.error_message = error_message;
 	}
 
-	public boolean isError() {
-		return error;
+	public String getSuccess_message() {
+		return success_message;
 	}
 
-	public void setError(boolean error) {
-		this.error = error;
+	public void setSuccess_message(String success_message) {
+		this.success_message = success_message;
 	}
 
 }

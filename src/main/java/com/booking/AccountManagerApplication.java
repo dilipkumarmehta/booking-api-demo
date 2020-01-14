@@ -14,10 +14,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 @EnableSwagger2
 @ComponentScan
-public class BokingApplication {
+public class AccountManagerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BokingApplication.class, args);
+		SpringApplication.run(AccountManagerApplication.class, args);
 	}
 
 	@Bean
